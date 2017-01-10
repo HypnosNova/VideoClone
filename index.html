@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML5 Video Player | Video JS</title>
+  <meta name="google-site-verification" content="QHf9MEYVlEWoNHbzTeUkSQsbRT5Twzqu6N0nX1i3nes" />
+  
+  <script src="video-js/video.js" type="text/javascript" charset="utf-8"></script>
+  <!-- JQuery not required, but used for dom ready function -->
+  <script src="javascripts/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="stylesheets/base.css" type="text/css" media="all" charset="utf-8" />
+  <link rel="stylesheet" href="video-js/video-js.css" type="text/css" media="all" charset="utf-8" />
+  <link rel="stylesheet" href="stylesheets/site.css" type="text/css" media="all" charset="utf-8" />
+
+  <!--[if !IE 7]>
+    <style type="text/css">
+      #wrap {display:table;height:100%}
+    </style>
+  <![endif]-->
+
+  <script type="text/javascript" charset="utf-8">
+
+    VideoJS.setupAllWhenReady();
+    // See demo.html for other setup options
+    
+  </script>
+
+</head>
+<body>
+
+  <div id="wrap">
+    <div id="main">
+
+      <ul id="nav">
+        <li><a href="http://videojs.com/skins.html">Skins</a></li>
+        <li><a href="http://github.com/zencoder/video-js">Source</a></li>
+        <li><a href="http://wiki.github.com/zencoder/video-js/browser-device-compatibility">Compatibility</a></li>        
+        <li><a href="http://github.com/zencoder/video-js/issues">Issue Tracker</a></li>
+        <li><a href="http://wiki.github.com/zencoder/video-js/">Wiki</a></li>
+      </ul>
+
+      <h1>Video JS</h1>
+      <p class="tagline">Open Source HTML5 Video Player</p>
+
+      <!-- Begin VideoJS -->
+      <div class="video-js-box">
+        <!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+        <video class="video-js" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png" controls preload>
+          <source src="test.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+         <object class="vjs-flash-fallback" width="640" height="264" type="application/x-shockwave-flash"
+            data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+            <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+            <param name="allowfullscreen" value="true" />
+            <param name="flashvars" value='config={"clip":{"url":"http://video-js.zencoder.com/oceans-clip.mp4","autoPlay":false,"autoBuffering":true}}' />
+            <img src="http://video-js.zencoder.com/oceans-clip.png" width="640" height="264" alt="Poster Image"
+              title="No video playback capabilities." />
+          </object>
+        </video>
+        <p class="vjs-no-video"><strong>Download Video:</strong>
+          <a href="sintel.mp4">MP4</a>,
+          <a href="http://videojs.com">HTML5 Video Player</a> by <a href="http://videojs.com">VideoJS</a>
+        </p>
+      </div>
+      <!-- End VideoJS -->
+      
+      <p id="video_note">Video clip is from <a href="http://disney.go.com/disneynature/oceans/" title="Oceans">Disney&rsquo;s Oceans</a></p>
+
+      <p>Video JS is a javascript-based video player that uses the HTML5 video functionality built into  advanced browsers. In general, the benefit of using an HTML5 player is a consistent look between browsers.</p>
+
+      <p id="sponsor">
+        <a href="http://zencoder.com">Video encoding &amp; hosting</a> provided by:<br>
+        <a href="http://zencoder.com"><img src="images/zencoder-logo.png" border="0" alt="Zencoder - Video Encoding"></a>
+      </p>
+
+      <div id="features_and_support" class="clearfix">
+        <div id="features">
+          <h6>Features</h6>
+          <ul id="feature_list">
+            <li>Free &amp; Open Source</li>
+            <li>Lightweight. <strong>NO IMAGES USED</strong></li>
+            <li>100% skinnable using CSS</li>
+            <li>Library independent</li>
+            <li>Easy to use</li>
+            <li>Easy to understand &amp; extend</li>
+            <li>Consistent look between browsers</li>
+            <li>Full Window Mode</li>
+            <li>Volume Control</li>
+            <li>Forced fallback to Flash (even when there is an unsupported source)</li>
+            <li></li>
+          </ul>
+        </div>
+        <div id="supported" class="clearfix">
+          <h6>Download</h6>
+          <div class="supported-section">
+            <a href="http://github.com/zencoder/video-js/zipball/master" title="Zip Download"><img src="images/icons/zip.png" alt="Zip Download"></a>
+            <a href="http://github.com/zencoder/video-js/tarball/master" title="Tar Download"><img src="images/icons/tar.png" alt="Tar Download"></a>
+          </div>
+          <h6>Supported Browsers</h6>
+          <div class="supported-section">
+            <a href="http://www.mozilla.com/en-US/firefox/firefox.html" title="Firefox"><img src="images/icons/firefox.png" alt="Firefox"></a>
+            <a href="http://www.apple.com/safari/" title="Safari"><img src="images/icons/safari.png" alt="Safari"></a>
+            <a href="http://www.google.com/chrome" title="Chrome"><img src="images/icons/chrome.png" alt="Chrome"></a>
+            <a href="http://www.opera.com/" title="Opera"><img src="images/icons/opera.png" alt="Opera"></a>
+          </div>
+          <h6>Fallback Support For</h6>
+          <div class="supported-section">
+            <a href="http://www.microsoft.com/windows/Internet-explorer/default.aspx" title="IE"><img src="images/icons/ie.png" alt="IE"></a>
+          </div>
+          <h6>Supported Formats</h6>
+          <div class="supported-section">
+            <a href="http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC" title="h264"><img src="images/icons/h264.png" alt="h264"></a>
+            <a href="http://www.theora.org/" title="Ogg"><img src="images/icons/ogg.png" alt="Ogg"></a>
+            <a href="http://www.webmproject.org/" title="WebM"><img src="images/icons/webm.png" alt="WebM"></a>
+          </div>
+          <h6>Compatible With</h6>
+          <div class="supported-section">
+            <a href="http://www.apple.com/iphone/" title="iPhone"><img src="images/icons/iphone.png" alt="iPhone"></a>
+            <a href="http://www.apple.com/ipad/" title="iPad"><img src="images/icons/ipad.png" alt="iPad"></a>
+          </div>
+        </div>
+
+        <p id="issues_link">Submit any bugs in the <a href="http://github.com/zencoder/video-js/issues">Issue Tracker</a> or update the <a href="http://wiki.github.com/zencoder/video-js/browser-device-compatibility">Compatibility Table</a></p>
+        <p>Moved <a href="http://videojs.com/comments.html">comments</a> to another page temporarily.</p>
+        
+        <!-- <div id="disqus_thread"></div> 
+        <script type="text/javascript">
+          /**
+            * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+            */
+          (function() {
+           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+           dsq.src = 'http://videojs.disqus.com/embed.js';
+           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=videojs">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+
+      </div>
+    </div>
+
+    <div id="footer">
+      &copy; <a href="http://videojs.com">The Video JS Project</a>. Sponsored by <a href="http://zencoder.com">Zencoder</a>.
+    </div>
+  </div>
+
+  <!-- <script type="text/javascript">
+  //<![CDATA[
+  (function() {
+    var links = document.getElementsByTagName('a');
+    var query = '?';
+    for(var i = 0; i < links.length; i++) {
+    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+      query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    }
+    }
+    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/videojs/get_num_replies.js' + query + '"></' + 'script>');
+  })();
+  //]]>
+  </script> -->
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16505296-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+</html>
